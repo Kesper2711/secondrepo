@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div style="color: red;font-size: 50px;">
+        <script>
+            var liczba1=prompt("liczba1=","");
+            var n
+            n=liczba1/1000
+            b=n*12
+            var osoba_1 = 
+            {
+                nazwisko    :'Kowalski',
+                imie        :'Jan',
+                zawod       :'tiktoker',
+                followy     :liczba1,
+                zarobki     :n,
+                roczne      :b,
+                wyswietl    :function()
+                {
+                    document.write(this.nazwisko+' '+ this.imie+' '+this.zawod+' '+this.followy+' '+this.zarobki+"zł"+' '+this.roczne+"zł")
+                }
+            }
+
+        </script>
+        <input type="button" onclick="osoba_1.wyswietl()"/>
+        
+        </div>
+    </body>
+</html>

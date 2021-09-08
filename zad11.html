@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div style="color: red;font-size: 50px;">
+        <script>
+            var osoba_1 = 
+            {
+                nazwisko    :'Kowalski',
+                imie        :'Jan',
+                zawod       :'piekarz',
+                wyswietl    :function()
+                {
+                    document.write(this.nazwisko+' '+ this.imie)
+                }
+            }
+            var tiktoker = 
+            {
+                nazwisko    :'Raczkowski',
+                imie        :'Max',
+                cecha       :'kozak',
+                cecha1      :'przekozak',
+                wyswietl    :function()
+                {
+                    document.write(this.nazwisko+' '+ this.imie+' '+ this.cecha+' '+this.cecha1)
+                }
+            }
+        </script>
+        <input type="button" onclick="osoba_1.wyswietl()"/>
+        <input type="button" onclick="tiktoker.wyswietl()"/>
+        </div>
+    </body>
+</html>
