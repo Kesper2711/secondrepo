@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<title>Wizytówka</title>
+
+<link rel="stylesheet" href="bur.css" type="text/css" />
+</head>
+
+<body>
+    <header> 
+       
+           <left> <a href="https://pl.wikipedia.org/wiki/Burgundia"><img src="burg.png" width="70px" height="70px" ></a> </left>
+        <center><p>BURGUNDIA</p></center>
+          
+    </header>
+    <section>  
+        <form method="..." onsubmit="klik(this.art.value, this.kaw.value, this.mus.value);return false">
+        <input type="number" id="art"><br><br>
+        <input type="number" id="kaw"> <br>
+        <input type="number" id="mus">
+         <input type="submit"  value="pokaz">
+        </form>
+    </section>
+    <content>
+        <p>Armia składa się z: </p>
+        <p id="xd"></p>
+        <script>
+            function klik(a, k, m){
+                var ar = parseInt(a);
+                var ka = parseInt(k);
+                var mu = parseInt(m);
+
+                var wszystko = Math.round(Math.random()*18+2);
+
+            var ay = Math.pow(a,wszystko);
+            var ky = Math.pow(k,wszystko);
+            var my = Math.pow(m,wszystko);
+                
+                xd.innerHTML= "" +ar+ " artylerzystów<br><br>" +ka+ " kawalerzystów<br><br>"  +mu+ " muszkieterów<br><br>" +ay+ " artylerzystów<br><br>" +ky+ " kawalerzystów<br><br>" +my+ " muszkieterów<br><br>" ;
+            }
+        </script>
+
+    </content> 
+  <footer>
+      <center><img src="sd.jfif" ></center>
+  </footer>
+</body>
+
+</html>
