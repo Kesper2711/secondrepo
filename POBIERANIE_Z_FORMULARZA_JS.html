@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script>
+    function sum()
+        {
+           a=document.getElementById("imie").value;
+         
+            document.write(document.getElementById("cen").value+" "+document.getElementById("ilo").value+" ale jestem koxem "+a);
+        }
+        </script>
+        
+    
+
+    <form>
+        IMIĘ <input type="text" id="imie" /> <br>
+        <input type="number" id="cen"  /> <br>
+        <input type="number" id="ilo"  /> <br>
+
+        <input onclick="sum()" type="button" value="wyslij">
+    </form>
+</head>
+<body>
+
+
+
+    <div>
+      <div onload="sum()"> </div>  
+    </div>
+
+</body>
