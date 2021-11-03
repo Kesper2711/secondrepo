@@ -1,0 +1,48 @@
+<html>
+<head>
+    <script>
+    function sum(dane)
+        {
+            cena_koncowa=0;
+            if(dane.zni.checked == true)
+            {
+                cena_koncowa=0.90*b;
+            }
+            
+
+
+           a=document.getElementById("imie").value;
+            b=document.getElementById("cen").value;
+            c=document.getElementById("ilo").value;
+            d=b*c;
+            document.write(document.getElementById("cen").value+" "+document.getElementById("ilo").value+" ale jestem koxem "+a+"<br>");
+            
+            document.write("suma="+d);
+            
+        }
+        </script>
+        
+    
+
+    <form>
+        IMIĘ <input type="text" id="imie" /> <br>
+        CENA<input type="number" id="cen"  /> <br>
+        ILOŚĆ<input type="number" id="ilo"  /> <br>
+        ZNIŻKA:<br>
+        <input type="checkbox" name="zni" value=0/> 10% <br>
+        <input type="checkbox" name="zniz" value=0/> 15% <br>
+        <input type="checkbox" name="znizk" value=0/> 20% <br>
+
+        <input onclick="sum()" type="button" value="wyslij">
+    </form>
+
+</head>
+<body>
+
+
+
+    <div>
+      <div onload="sum()"> </div>  
+    </div>
+
+</body>
